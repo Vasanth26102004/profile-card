@@ -160,11 +160,6 @@
             border-radius: 50%;
         }
         
-        #like:hover {
-            color: palevioletred;
-            box-shadow: palevioletred 0px 0px 5px 3px;
-        }
-        
         .cmt-pop-up {
             width: 300px;
             height: 400px;
@@ -232,4 +227,71 @@
             min-height: 230px;
             max-height: 230px;
             border: none;
+        }
+        
+        .shr-pop-up {
+            width: 230px;
+            bottom: 250px;
+            left: 250px;
+            padding: 15px;
+            display: flex;
+            align-items: start;
+            justify-content: left;
+            justify-items: left;
+            flex-direction: column;
+            background-color: rgb(233, 240, 245);
+            border-radius: 15px;
+            transform: scale(0);
+            transition: all .3s ease-in-out;
+        }
+        
+        .shr-pop-up.active {
+            bottom: 410px;
+            left: 120px;
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+        }
+        
+        #psr {
+            right: 54px;
+        }
+        
+        #bsr {
+            right: 54px;
+        }
+        
+        #fls {
+            right: 65px;
+        }
+        
+        #wtp {
+            right: 48px;
+        }
+        
+        #fbk {
+            right: 51px;
+        }
+        
+        #igm {
+            right: 50px;
+        }
+        
+        #ttr {
+            right: 61px;
+        }
+        
+        .shr-pop-up label {
+            width: 200px;
+            padding: 10px;
+            margin: 1px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: rgb(24, 55, 100);
+            background-color: rgba(173, 193, 206, 0.397);
+            transition: all .1s ease-in-out;
+        }
+        
+        .shr-pop-up label:hover {
+            opacity: 50%;
+            transition: all .1s ease-in-out;
         }
