@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="container">
+            <h3>Sketchy Ghost</h3>
+            <h4>Devoloper</h4>
+            <div class="icon">
+                <a href="https://www.facebook.com"><img id="fb" src="images/facebook.png"></a>
+                <a href="https://www.whatsapp.com"><img id="wp" src="images/whatsapp.png"></a>
+                <a href="https://www.instagram.com"><img id="ins" src="images/instagram.png"></a>
+                <a href="https://www.youtube.com"><img id="yt" src="images/youtube.png"></a>
+                <a href="https://twitter.com"><img id="twt" src="images/twitter.png"></a>
+            </div>
+
+            <button class="sbr">Subscribe</button>
+            <button class="msg">Message</button>
+
+            <div class="count">
+                <ion-icon id="like" name="heart-outline" onclick=""></ion-icon>
+                <lable id="like-count"></lable>
+                <ion-icon id="cmt" name="chatbubble-ellipses-outline" onclick=""></ion-icon>
+                <lable id="cmt-count"></lable>
+                <ion-icon id="shr" name="arrow-undo-outline" onclick=""></ion-icon>
+                <lable id="shr-count"></lable>
+            </div>
+        </div>
+        <input class="profile" type="image" src="images/ghost.jpg" alt="your pic">
+
+        <form id="cmt-pop-up" class="cmt-pop-up">
+            <input type="text" class="username" placeholder="Username" required>
+            <textarea class="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+            <button class="btn-p" type="submit">Post</button>
+            <button class="btn-c">Close</button>
+        </form>
+        <div class="shr-pop-up">
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

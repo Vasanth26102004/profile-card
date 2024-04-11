@@ -1,0 +1,235 @@
+        * {
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+        }
+        
+        html,
+        body {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: 30px;
+            background-color: rgb(241, 214, 214);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        div.form-box {
+            width: 360px;
+            height: 170px;
+            position: fixed;
+            top: 70px;
+            background-color: rgb(0, 68, 255);
+            border-radius: 25px 25px 0px 0px;
+        }
+        
+        input.profile {
+            height: 150px;
+            width: 150px;
+            background-color: none;
+            outline: 4px white solid;
+            top: 45px;
+            border-radius: 50%;
+        }
+        
+        .container {
+            width: 360px;
+            height: 300px;
+            padding: 50px;
+            bottom: 100px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 0 0 25px 25px;
+            position: inherit;
+        }
+        
+        h3 {
+            font-size: 1.7rem;
+            bottom: 45px;
+            cursor: default;
+        }
+        
+        h4 {
+            bottom: 55px;
+            cursor: default;
+        }
+        
+        div.icon {
+            text-decoration: none;
+            bottom: 55px;
+            font-size: 2rem;
+            justify-content: space-around;
+            cursor: default;
+        }
+        
+        img {
+            width: 40px;
+            border-radius: 50%;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        #fb:hover {
+            bottom: 2px;
+            width: 34px;
+            outline: 3px rgb(42, 91, 228) solid;
+            border: 3px rgb(255, 255, 255) solid;
+            box-shadow: rgb(42, 91, 228) 0px 0px 8px 4px;
+            border-radius: 50%;
+            transition: all 0.1s ease;
+        }
+        
+        #wp:hover {
+            bottom: 2px;
+            width: 34px;
+            outline: 3px rgb(58, 219, 44) solid;
+            border: 3px rgb(255, 255, 255) solid;
+            box-shadow: rgb(58, 219, 44) 0px 0px 8px 4px;
+            border-radius: 50%;
+            transition: all 0.1s ease;
+        }
+        
+        #ins:hover {
+            bottom: 2px;
+            width: 34px;
+            outline: 3px rgb(255, 0, 149) solid;
+            border: 3px rgb(255, 255, 255) solid;
+            box-shadow: rgb(255, 0, 149) 0px 0px 8px 4px;
+            border-radius: 50%;
+            transition: all 0.1s ease;
+        }
+        
+        #yt:hover {
+            bottom: 2px;
+            width: 34px;
+            outline: 3px rgb(250, 18, 18) solid;
+            border: 3px rgb(255, 255, 255) solid;
+            box-shadow: rgb(250, 18, 18) 0px 0px 8px 4px;
+            border-radius: 50%;
+            transition: all .1s ease;
+        }
+        
+        #twt:hover {
+            bottom: 2px;
+            width: 34px;
+            outline: 3px rgb(35, 166, 241) solid;
+            border: 3px rgb(255, 255, 255) solid;
+            box-shadow: rgb(35, 166, 241) 0px 0px 8px 4px;
+            border-radius: 50%;
+            transition: all 0.1s ease;
+        }
+        
+        .sbr,
+        .msg {
+            width: 100px;
+            color: white;
+            background-color: rgb(0, 78, 255);
+            font-size: 1rem;
+            padding: 7px 14px;
+            bottom: 40px;
+            border-radius: 15px;
+            box-shadow: gray 1px 1px 10px 2px;
+            outline: none;
+            border: none;
+            margin: 3px;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        .sbr:hover,
+        .msg:hover {
+            background-color: rgb(0, 0, 255);
+            font-size: .9rem;
+            outline: 2px rgb(0, 0, 255) solid;
+            border: 2px rgb(255, 255, 255) solid;
+            box-shadow: rgb(0, 0, 255) 0px 0px 8px 4px;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        div.count {
+            bottom: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        
+        #like,
+        #cmt,
+        #shr {
+            top: 2px;
+            border-radius: 50%;
+        }
+        
+        #like:hover {
+            color: palevioletred;
+            box-shadow: palevioletred 0px 0px 5px 3px;
+        }
+        
+        .cmt-pop-up {
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            background-color: rgb(207, 217, 233);
+            bottom: 130px;
+            left: 30px;
+            border-radius: 15px;
+            transform: scale(0);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .cmt-pop-up.active {
+            transform: scale(1);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .cmt-pop-up button {
+            width: 100px;
+            color: white;
+            background-color: rgb(0, 78, 255);
+            font-size: 1rem;
+            padding: 7px 14px;
+            border-radius: 15px;
+            box-shadow: gray 1px 1px 10px 2px;
+            outline: none;
+            border: none;
+            margin: 3px;
+        }
+        
+        .cmt-pop-up .btn-p:hover {
+            background-color: rgb(33, 219, 33);
+            font-size: .9rem;
+            outline: 2px rgb(33, 219, 33) solid;
+            border: 2px rgb(255, 255, 255) solid;
+            box-shadow: rgb(33, 219, 33) 0px 0px 8px 4px;
+            transition: all 0.1s linear;
+        }
+        
+        .cmt-pop-up .btn-c:hover {
+            background-color: rgb(241, 50, 43);
+            font-size: .9rem;
+            outline: 2px rgb(241, 50, 43) solid;
+            border: 2px rgb(255, 255, 255) solid;
+            box-shadow: rgb(241, 50, 43) 0px 0px 8px 4px;
+            transition: all 0.1s linear;
+        }
+        
+        .username,
+        .btn,
+        .comment {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .username {
+            width: 240px;
+            border: none;
+        }
+        
+        .comment {
+            min-width: 240px;
+            max-width: 240px;
+            min-height: 230px;
+            max-height: 230px;
+            border: none;
+        }
