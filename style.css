@@ -77,9 +77,9 @@ img {
 
 #fb:hover {
     width: 34px;
-    outline: 3px rgb(42, 91, 228) solid;
+    outline: 3px rgb(60, 50, 135) solid;
     border: 3px rgb(255, 255, 255) solid;
-    box-shadow: rgb(42, 91, 228) 0px 0px 8px 4px;
+    box-shadow: rgb(60, 50, 135) 0px 0px 8px 4px;
     border-radius: 50%;
     transition: all 0.1s ease;
 }
@@ -87,9 +87,9 @@ img {
 #wp:hover {
     bottom: 2px;
     width: 34px;
-    outline: 3px rgb(58, 219, 44) solid;
+    outline: 3px rgb(60, 220, 45) solid;
     border: 3px rgb(255, 255, 255) solid;
-    box-shadow: rgb(58, 219, 44) 0px 0px 8px 4px;
+    box-shadow: rgb(60, 220, 45) 0px 0px 8px 4px;
     border-radius: 50%;
     transition: all 0.1s ease;
 }
@@ -97,19 +97,19 @@ img {
 #ins:hover {
     bottom: 2px;
     width: 34px;
-    outline: 3px rgb(255, 0, 149) solid;
+    outline: 3px rgb(255, 0, 150) solid;
     border: 3px rgb(255, 255, 255) solid;
-    box-shadow: rgb(255, 0, 149) 0px 0px 8px 4px;
+    box-shadow: rgb(255, 0, 150) 0px 0px 8px 4px;
     border-radius: 50%;
     transition: all 0.1s ease;
 }
 
-#yt:hover {
+#ln:hover {
     bottom: 2px;
     width: 34px;
-    outline: 3px rgb(250, 18, 18) solid;
+    outline: 3px rgb(50, 110, 215) solid;
     border: 3px rgb(255, 255, 255) solid;
-    box-shadow: rgb(250, 18, 18) 0px 0px 8px 4px;
+    box-shadow: rgb(50, 110, 215) 0px 0px 8px 4px;
     border-radius: 50%;
     transition: all .1s ease;
 }
@@ -117,20 +117,21 @@ img {
 #twt:hover {
     bottom: 2px;
     width: 34px;
-    outline: 3px rgb(35, 166, 241) solid;
+    outline: 3px rgb(35, 165, 240) solid;
     border: 3px rgb(255, 255, 255) solid;
-    box-shadow: rgb(35, 166, 241) 0px 0px 8px 4px;
+    box-shadow: rgb(35, 165, 240) 0px 0px 8px 4px;
     border-radius: 50%;
     transition: all 0.1s ease;
 }
 
-.sbr,
+.phn,
 .msg {
     width: 100px;
     color: white;
+    text-decoration: none;
     background-color: rgb(0, 78, 255);
     font-size: 1rem;
-    padding: 7px 14px;
+    padding: 7px 28px 7px 14px;
     bottom: 40px;
     border-radius: 15px;
     box-shadow: gray 1px 1px 10px 2px;
@@ -140,7 +141,7 @@ img {
     transition: all 0.1s ease-in-out;
 }
 
-.sbr:hover,
+.phn:hover,
 .msg:hover {
     background-color: rgb(0, 0, 255);
     font-size: .9rem;
@@ -150,8 +151,14 @@ img {
     transition: all 0.1s ease-in-out;
 }
 
+.call {
+    top: 3px;
+    margin-right: 15px;
+}
+
 div.count {
     bottom: 25px;
+    left: 20px;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -161,7 +168,30 @@ div.count {
 #shr {
     top: 2px;
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 0px;
+}
+
+.like-fill,
+.cmt-fill,
+.shr-fill {
+    top: 2px;
+    right: 55px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.like-fill.active {
+    color: rgb(252, 96, 192);
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.cmt-fill.active,
+.shr-fill.active {
+    color: rgb(73, 55, 233);
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
 }
 
 #like-count,
