@@ -124,6 +124,10 @@ img {
     transition: all 0.1s ease;
 }
 
+.contact {
+    margin: 10px 0px;
+}
+
 .phn,
 .msg {
     width: 100px;
@@ -151,7 +155,8 @@ img {
     transition: all 0.1s ease-in-out;
 }
 
-.call {
+.call,
+.mail {
     top: 3px;
     margin-right: 15px;
 }
